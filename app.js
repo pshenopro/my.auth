@@ -1,6 +1,7 @@
 const express = require('express'),
       config = require('config'),
       request = require('request'),
+      path = require('path'),
       posts = require('./routes/http.posts');
 
 const app = express(),
