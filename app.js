@@ -19,6 +19,10 @@ app.use((req, res, next) => {
 app.use(pathHttp, (req, res, next) => {
     const data = { ...req.body };
 
+    if (pathHttp === '/') {
+        return;
+    }
+
     request({
         url: backAPI + posts[pathHttp].url,
         method: posts[pathHttp].method,
