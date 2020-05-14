@@ -17,11 +17,13 @@ app.use((req, res, next) => {
 });
 
 app.use(pathHttp, (req, res, next) => {
-    const data = { ...req.body };
-
     if (pathHttp === '/') {
         return;
     }
+
+    const data = { ...req.body };
+
+    console.log('after / ' + pathHttp);
 
     request({
         url: backAPI + posts[pathHttp].url,
