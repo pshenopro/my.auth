@@ -32,8 +32,6 @@ app.use(pathHttp, (req, res, next) => {
 
     const data = { ...req.body };
 
-    console.log('after / ' + pathHttp);
-
     request({
         url: backAPI + posts[pathHttp].url,
         method: posts[pathHttp].method,
