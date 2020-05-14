@@ -1,0 +1,14 @@
+.color {
+    color: purple;
+}
+
+.myinput {
+    margin: 0 !important;
+}
+
+.card-body {
+    padding: 20px !important;
+
+    display: flex;
+    justify-content: space-between;
+}

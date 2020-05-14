@@ -1,0 +1,57 @@
+@import "~materialize-css/dist/css/materialize.min.css";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+.input-field input {
+    color: #fff;
+}
+
+.card-title {
+    padding-bottom: 20px;
+}
+
+#nav-mobile a {
+    transition: all .3s;
+}
+#nav-mobile a.active {
+    font-style: italic;
+    color: purple;
+}
+
+.modal-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+    position: fixed;
+}
+
+.modal.open {
+    position: static;
+    z-index: 1003;
+    display: block;
+    opacity: 1;
+}
+
+.auth-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    max-width: 600px;
+}
+
+.auth-page h1 {
+    margin-top: 0;
+}
+.auth-page .col {
+    padding-bottom: 100px;
+}
